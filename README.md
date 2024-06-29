@@ -1,11 +1,7 @@
 # Analysis-of-NOAA-s-1989-Storm-Events
 This is an analysis of the National Oceanic and Atmospheric Administration  (NOAA) storm events for 1989 by Vasco Ayere Avoka
-date: "2024-06-28"
-output: 
-  html_document:
-    theme:
-      bootswatch: flatly 
----
+"2024-06-28"
+
 ```{r setup, include= FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 if(!require(pacman)) install.packages("pacman")
