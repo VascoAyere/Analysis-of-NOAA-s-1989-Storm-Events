@@ -71,13 +71,11 @@ merged_data <- merge(x = events_per_state, y = state_info, by.x = "state", by.y 
 merged_data <- na.omit(merged_data)
 
 # Task 10: Create the plot
-plot <-  ggplot(merged_data, aes(x = area, y = num_events, color = region)) +
+ggplot(merged_data, aes(x = area, y = num_events, color = region)) +
   geom_point() +
   labs(x = "Land area (square miles)", y = "# of storm events in 2017", color = "Region") +
   ggtitle("Number of storm events by state, area and region created by Vasco Ayere Avoka") +
   theme_minimal()
 
-# Save the plot to a file
-ggsave("storm_events_plot.pdf", plot = plot, width = 10, height = 6, dpi = 300)
 
 
